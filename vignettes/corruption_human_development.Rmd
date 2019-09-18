@@ -13,10 +13,16 @@ knitr::opts_chunk$set(
 )
 ```
 
-The data, shown in table form and basic scatterplot form.
+The packages we will use for this example:
 ```{r message = FALSE}
 library(tidyverse)
+library(cowplot)    # for theme_minimal_hgrid()
+library(colorspace) # for darken()
+library(ggrepel)    # for geom_text_repel()
+```
 
+The data, shown in table form and basic scatterplot form.
+```{r}
 corrupt <- practicalgg::corruption %>% 
   filter(year == 2015) %>% 
   na.omit()
@@ -28,10 +34,7 @@ ggplot(corrupt, aes(cpi, hdi, color = region)) +
 ```
 
 Basic styling: point colors and theme.
-```{r message = FALSE}
-library(cowplot) # for theme_minimal_hgrid()
-library(colorspace) # for darken()
-
+```{r}
 # Okabe Ito colors
 region_cols <- c("#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#999999")
 
@@ -233,8 +236,6 @@ ggplot(corrupt, aes(cpi, hdi)) +
 Highlight select countries.
 
 ```{r}
-library(ggrepel)
-
 country_highlight <- c("Germany", "Norway", "United States", "Greece", "Singapore", "Rwanda", "Russia", "Venezuela", "Sudan", "Iraq", "Ghana", "Niger", "Chad", "Kuwait", "Qatar", "Myanmar", "Nepal", "Chile", "Argentina", "Japan", "China")
 
 corrupt <- corrupt %>%

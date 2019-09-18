@@ -25,6 +25,7 @@ Imports:
     cowplot,
     colorspace,
     ggrepel,
+    rworldmap,
     sf,
     knitr,
     rmarkdown
