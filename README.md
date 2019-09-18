@@ -31,3 +31,10 @@ To make sure all examples run, install this package as follows:
 ``` r
 remotes::install_github("wilkelab/practicalgg")
 ```
+
+## Browse the examples
+
+These are the examples currently available:
+
+  - [Corruption and human
+    development](https://wilkelab.org/practicalgg/articles/corruption_human_development.html)
