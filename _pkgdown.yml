@@ -1,0 +1,7 @@
+destination: docs
+
+reference:
+- title: Datasets
+  desc: Various datasets used in the example figures
+  contents:
+  - corruption
