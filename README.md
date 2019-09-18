@@ -38,3 +38,5 @@ These are the examples currently available:
 
   - [Corruption and human
     development](https://wilkelab.org/practicalgg/articles/corruption_human_development.html)
+  - [Interrupted Goode
+    homolosine](https://wilkelab.org/practicalgg/articles/goode.html)
