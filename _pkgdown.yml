@@ -4,6 +4,7 @@ reference:
 - title: Datasets
   desc: Various datasets used in the example figures
   contents:
+  - bundestag
   - corruption
   - happy
   - texas_income
