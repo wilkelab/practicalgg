@@ -3,7 +3,8 @@
 
 # Practical ggplot2
 
-Claus O. Wilke
+[![Build
+Status](https://travis-ci.org/wilkelab/isoband.svg?branch=master)](https://travis-ci.org/wilkelab/isoband)
 
 The R package ggplot2 provides a powerful and flexible approach to data
 visualization, and it is suitable both for rapid exploration of
