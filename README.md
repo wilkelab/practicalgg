@@ -42,3 +42,5 @@ These are the examples currently available:
     age](https://wilkelab.org/practicalgg/articles/health_status.html)
   - [Interrupted Goode
     homolosine](https://wilkelab.org/practicalgg/articles/goode.html)
+  - [Median Texas income by
+    county](https://wilkelab.org/practicalgg/articles/Texas_income.html)

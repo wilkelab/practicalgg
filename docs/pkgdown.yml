@@ -2,6 +2,7 @@ pandoc: 2.3.1
 pkgdown: 1.3.0
 pkgdown_sha: ~
 articles:
+  Texas_income: Texas_income.html
   corruption_human_development: corruption_human_development.html
   goode: goode.html
   health_status: health_status.html

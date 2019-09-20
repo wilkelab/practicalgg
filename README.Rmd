@@ -36,3 +36,4 @@ These are the examples currently available:
 * [Corruption and human development](https://wilkelab.org/practicalgg/articles/corruption_human_development.html)
 * [Health status by age](https://wilkelab.org/practicalgg/articles/health_status.html)
 * [Interrupted Goode homolosine](https://wilkelab.org/practicalgg/articles/goode.html)
+* [Median Texas income by county](https://wilkelab.org/practicalgg/articles/Texas_income.html)
