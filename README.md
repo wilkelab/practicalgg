@@ -36,6 +36,8 @@ remotes::install_github("wilkelab/practicalgg")
 
 These are the examples currently available:
 
+  - [Bundestag pie
+    chart](https://wilkelab.org/practicalgg/articles/bundestag_pie.html)
   - [Corruption and human
     development](https://wilkelab.org/practicalgg/articles/corruption_human_development.html)
   - [Health status by
