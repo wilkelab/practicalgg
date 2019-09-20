@@ -5,3 +5,4 @@ reference:
   desc: Various datasets used in the example figures
   contents:
   - corruption
+  - happy

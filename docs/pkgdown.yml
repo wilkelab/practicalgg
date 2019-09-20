@@ -4,4 +4,5 @@ pkgdown_sha: ~
 articles:
   corruption_human_development: corruption_human_development.html
   goode: goode.html
+  health_status: health_status.html
 

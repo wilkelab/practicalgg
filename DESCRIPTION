@@ -34,4 +34,5 @@ LazyData: true
 URL: https://github.com/wilkelab/practicalgg
 BugReports: https://github.com/wilkelab/practicalgg/issues
 RoxygenNote: 6.1.1
+Roxygen: list(markdown = TRUE)
 VignetteBuilder: knitr
