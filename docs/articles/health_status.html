@@ -99,10 +99,10 @@
 
     
     
-<p>The packages we will use for this example:</p>
+<p>For this example, we will use the following packages.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(tidyverse)</a>
 <a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cowplot)   <span class="co"># for theme_minimal_hgrid()</span></a></code></pre></div>
-<p>The data, shown in table form and as basic density plots.</p>
+<p>The dataset is provided as <code><a href="../reference/happy.html">practicalgg::happy</a></code>. Let’s look at it in table form and as basic density plots.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">data_health &lt;-<span class="st"> </span>practicalgg<span class="op">::</span>happy <span class="op">%&gt;%</span></a>
 <a class="sourceLine" id="cb2-2" data-line-number="2"><span class="st">  </span><span class="kw">select</span>(age, health) <span class="op">%&gt;%</span></a>
 <a class="sourceLine" id="cb2-3" data-line-number="3"><span class="st">  </span><span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/na.fail">na.omit</a></span>() <span class="op">%&gt;%</span></a>

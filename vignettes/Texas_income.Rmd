@@ -13,15 +13,16 @@ knitr::opts_chunk$set(
 )
 ```
 
-The packages we will use for this example:
+
+For this example, we will use the following packages.
 ```{r message = FALSE}
 library(tidyverse)
 library(cowplot)     # for theme_map()
-library(colorspace) # for scale_fill_continuous_sequential()
+library(colorspace)  # for scale_fill_continuous_sequential()
 library(sf)          # for manipulation of simple features objects
 ```
 
-The data, in table form and simple longitude--latitude plot.
+The dataset is provided as `practicalgg::texas_income`. Let's look at it in table form and in a simple longitude--latitude plot.
 
 ```{r message = FALSE}
 # attach data set

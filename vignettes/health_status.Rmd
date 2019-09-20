@@ -13,13 +13,15 @@ knitr::opts_chunk$set(
 )
 ```
 
-The packages we will use for this example:
+
+For this example, we will use the following packages.
 ```{r message = FALSE}
 library(tidyverse)
 library(cowplot)   # for theme_minimal_hgrid()
 ```
 
-The data, shown in table form and as basic density plots.
+The dataset is provided as `practicalgg::happy`. Let's look at it in table form and as basic density plots.
+
 ```{r message = FALSE}
 data_health <- practicalgg::happy %>%
   select(age, health) %>%

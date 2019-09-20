@@ -13,14 +13,14 @@ knitr::opts_chunk$set(
 )
 ```
 
-The packages we will use for this example:
+For this example, we will use the following packages.
 ```{r message = FALSE}
 library(tidyverse)
 library(ggforce)   # for geom_arc_bar()
 library(cowplot)   # for theme_map()
 ```
 
-The data, shown in table form and basic pie-chart form.
+The dataset is provided as `practicalgg::bundestag`. Let's look at it in table form and as a basic pie-chart.
 ```{r message = FALSE}
 library(tidyverse)
 
