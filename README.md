@@ -30,6 +30,11 @@ figures look appropriate in the default R Markdown html style.
 To make sure all examples run, install this package as follows:
 
 ``` r
+# install the latest version of package "remotes" from CRAN
+install.packages("remotes")
+
+# install package "practicalgg" from github; this pulls in 
+# all required dependencies and makes available the example data
 remotes::install_github("wilkelab/practicalgg")
 ```
 
