@@ -236,7 +236,7 @@
 <a class="sourceLine" id="cb10-34" data-line-number="34">  ) <span class="op">+</span></a>
 <a class="sourceLine" id="cb10-35" data-line-number="35"><span class="st">  </span><span class="kw">coord_fixed</span>()</a></code></pre></div>
 <p><img src="bundestag_pie_files/figure-html/unnamed-chunk-7-1.png" width="576"></p>
-<p>This plot shows how using a cartesian coordinate system is helpful. We can see exactly where elements lie and how we need to expand the limits to fully show all the labels. We have expanded the x axis limits by the same amount so that the final pie chart is centered in the drawing area.</p>
+<p>This plot shows how using a cartesian coordinate system is helpful. We can see exactly where elements lie and how we need to expand the limits to fully show all the labels. The CDU/CSU label remains partially obscured at this point, but this will be fixed later as we remove the legend and axis labels, resulting in slightly more space for the pie chart itself as well as the labels.</p>
 <p>Next we change the pie colors. The dataset provides appropriate party colors, and we use those directly with <code>scale_fill_identity()</code>. Note that this scale eliminates the legend. We don’t need a legend anyways, because we have direct labeled the pie slices.</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1"><span class="kw">ggplot</span>(bund_pie) <span class="op">+</span></a>
 <a class="sourceLine" id="cb11-2" data-line-number="2"><span class="st">  </span><span class="kw"><a href="https://ggforce.data-imaginist.com/reference/geom_arc_bar.html">geom_arc_bar</a></span>(</a>

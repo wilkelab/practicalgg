@@ -157,7 +157,7 @@ ggplot(bund_pie) +
   coord_fixed()
 ```
 
-This plot shows how using a cartesian coordinate system is helpful. We can see exactly where elements lie and how we need to expand the limits to fully show all the labels. We have expanded the x axis limits by the same amount so that the final pie chart is centered in the drawing area.
+This plot shows how using a cartesian coordinate system is helpful. We can see exactly where elements lie and how we need to expand the limits to fully show all the labels. The CDU/CSU label remains partially obscured at this point, but this will be fixed later as we remove the legend and axis labels, resulting in slightly more space for the pie chart itself as well as the labels.
 
 Next we change the pie colors. The dataset provides appropriate party colors, and we use those directly with `scale_fill_identity()`. Note that this scale eliminates the legend. We don't need a legend anyways, because we have direct labeled the pie slices.
 
