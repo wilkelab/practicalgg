@@ -91,8 +91,10 @@ wintri_outline <-
   st_sf() %>%
   st_transform_proj(crs = crs_wintri) # transform to Winkel tripel
 
+# the resulting data frame
 wintri_outline
 
+# and plotted with geom_sf()
 ggplot() + 
   geom_sf(
     data = wintri_outline,
@@ -102,7 +104,7 @@ ggplot() +
   theme_map()
 ```
 
-Now we plot everything together. We plot the outline polygon twice, once filled without line at the bottom and once without fill but with line at the top, to create a crips outline for our world map.
+Now we plot everything together. We plot the outline polygon twice, once at the bottom filled but without line color and once on the top without fill but with line color, to create a crips outline for our world map.
 
 ```{r}
 ggplot() + 
