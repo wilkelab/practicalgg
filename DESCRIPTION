@@ -26,6 +26,7 @@ Imports:
     colorspace,
     ggforce,
     ggrepel,
+    lwgeom,
     rgeos,
     rworldmap,
     sf,

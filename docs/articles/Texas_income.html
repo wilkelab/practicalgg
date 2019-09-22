@@ -56,6 +56,9 @@
       <a href="../articles/Texas_income.html">Median Texas income by county</a>
     </li>
     <li>
+      <a href="../articles/Winkel_tripel.html">Winkel tripel projection</a>
+    </li>
+    <li>
       <a href="../articles/bundestag_pie.html">Bundestag pie chart</a>
     </li>
     <li>
@@ -102,7 +105,7 @@
 <p>For this example, we will use the following packages.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(tidyverse)</a>
 <a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cowplot)     <span class="co"># for theme_map()</span></a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(colorspace) <span class="co"># for scale_fill_continuous_sequential()</span></a>
+<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(colorspace)  <span class="co"># for scale_fill_continuous_sequential()</span></a>
 <a class="sourceLine" id="cb1-4" data-line-number="4"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(sf)          <span class="co"># for manipulation of simple features objects</span></a></code></pre></div>
 <p>The dataset is provided as <code><a href="../reference/texas_income.html">practicalgg::texas_income</a></code>. Let’s look at it in table form and in a simple longitude–latitude plot.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># attach data set</span></a>

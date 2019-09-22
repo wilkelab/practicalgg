@@ -38,6 +38,10 @@ install.packages("remotes")
 remotes::install_github("wilkelab/practicalgg")
 ```
 
+You may have to repeat the `install_github()` command if you want to
+work through an example I have added after you last installed the
+practicalgg package.
+
 ## Browse the examples
 
 These are the examples currently available:
@@ -52,3 +56,5 @@ These are the examples currently available:
     homolosine](https://wilkelab.org/practicalgg/articles/goode.html)
   - [Median Texas income by
     county](https://wilkelab.org/practicalgg/articles/Texas_income.html)
+  - [Winkel tripel
+    projection](https://wilkelab.org/practicalgg/articles/Winkel_tripel.html)
