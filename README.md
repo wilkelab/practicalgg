@@ -27,7 +27,16 @@ figures look appropriate in the default R Markdown html style.
 
 ## Installation
 
-To make sure all examples run, install this package as follows:
+The examples presented here require a working installation of the
+statistical programming language R. You can download the latest version
+from [here.](https://cran.r-project.org/) Further, when working with R,
+it is highly recommended to use the RStudio IDE, and you can download
+the latest version from
+[here.](https://rstudio.com/products/rstudio/download/)
+
+In addition to R and RStudio, you need a number of R packages. You can
+install all required packages by executing the following two commands in
+an R console:
 
 ``` r
 # install the latest version of package "remotes" from CRAN
