@@ -3,8 +3,8 @@
 
 # Practical ggplot2
 
-[![Build
-Status](https://travis-ci.org/wilkelab/isoband.svg?branch=master)](https://travis-ci.org/wilkelab/practicalgg)
+[![R build
+status](https://github.com/wilkelab/practicalgg/workflows/R-CMD-check/badge.svg)](https://github.com/wilkelab/practicalgg/actions)
 
 The R package ggplot2 provides a powerful and flexible approach to data
 visualization, and it is suitable both for rapid exploration of
@@ -55,15 +55,15 @@ practicalgg package.
 
 These are the examples currently available:
 
-  - [Bundestag pie
+-   [Bundestag pie
     chart](https://wilkelab.org/practicalgg/articles/bundestag_pie.html)
-  - [Corruption and human
+-   [Corruption and human
     development](https://wilkelab.org/practicalgg/articles/corruption_human_development.html)
-  - [Health status by
+-   [Health status by
     age](https://wilkelab.org/practicalgg/articles/health_status.html)
-  - [Interrupted Goode
+-   [Interrupted Goode
     homolosine](https://wilkelab.org/practicalgg/articles/goode.html)
-  - [Median Texas income by
+-   [Median Texas income by
     county](https://wilkelab.org/practicalgg/articles/Texas_income.html)
-  - [Winkel tripel
+-   [Winkel tripel
     projection](https://wilkelab.org/practicalgg/articles/Winkel_tripel.html)

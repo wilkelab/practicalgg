@@ -10,21 +10,27 @@
 
 
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
-<!-- sticky kit -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
+<!-- headroom.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -37,7 +43,6 @@
 <meta property="og:description" content="Composition of the 8th Bundestag, from 1976-1980. The party and seat columns should be self-explanatory.
 The colors_original column holds the traditional colors used to represent these parties, and the colors
 column holds variations of these colors that are less saturated." />
-<meta name="twitter:card" content="summary" />
 
 
 
@@ -52,9 +57,10 @@ column holds variations of these colors that are less saturated." />
 <![endif]-->
 
 
+
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -76,7 +82,7 @@ column holds variations of these colors that are less saturated." />
       <ul class="nav navbar-nav">
         <li>
   <a href="../index.html">
-    <span class="fa fa-home fa-lg"></span>
+    <span class="fas fa-home fa-lg"></span>
      
   </a>
 </li>
@@ -113,8 +119,8 @@ column holds variations of these colors that are less saturated." />
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/wilkelab/practicalgg">
-    <span class="fa fa-github fa-lg"></span>
+  <a href="https://github.com/wilkelab/practicalgg/">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -125,6 +131,7 @@ column holds variations of these colors that are less saturated." />
 </div><!--/.navbar -->
 
       
+
       </header>
 
 <div class="row">
@@ -141,7 +148,7 @@ The <code>colors_original</code> column holds the traditional colors used to rep
 column holds variations of these colors that are less saturated.</p>
     </div>
 
-    <pre class="usage"><span class='no'>bundestag</span></pre>
+    <pre class="usage"><span class='va'>bundestag</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
@@ -152,61 +159,59 @@ column holds variations of these colors that are less saturated.</p>
     <p>Source: <a href='https://en.wikipedia.org/wiki/Bundestag#Distribution_of_seats_in_the_Bundestag'>https://en.wikipedia.org/wiki/Bundestag#Distribution_of_seats_in_the_Bundestag</a></p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/library'>library</a></span>(<span class='no'>tidyverse</span>)</div><div class='output co'>#&gt; <span class='message'>── <span style='font-weight: bold;'>Attaching packages</span><span> ───────────────────────────────────────────── tidyverse 1.2.1 ──</span></div><div class='output co'>#&gt; <span class='message'></span><span style='color: #00BB00;'>✔</span><span> </span><span style='color: #0000BB;'>ggplot2</span><span> 3.2.1     </span><span style='color: #00BB00;'>✔</span><span> </span><span style='color: #0000BB;'>purrr  </span><span> 0.3.2</span>
-#&gt; <span class='message'></span><span style='color: #00BB00;'>✔</span><span> </span><span style='color: #0000BB;'>tibble </span><span> 2.1.3     </span><span style='color: #00BB00;'>✔</span><span> </span><span style='color: #0000BB;'>dplyr  </span><span> 0.8.3</span>
-#&gt; <span class='message'></span><span style='color: #00BB00;'>✔</span><span> </span><span style='color: #0000BB;'>tidyr  </span><span> 1.0.0     </span><span style='color: #00BB00;'>✔</span><span> </span><span style='color: #0000BB;'>stringr</span><span> 1.4.0</span>
-#&gt; <span class='message'></span><span style='color: #00BB00;'>✔</span><span> </span><span style='color: #0000BB;'>readr  </span><span> 1.3.1     </span><span style='color: #00BB00;'>✔</span><span> </span><span style='color: #0000BB;'>forcats</span><span> 0.4.0</span></div><div class='output co'>#&gt; <span class='message'>── </span><span style='font-weight: bold;'>Conflicts</span><span> ──────────────────────────────────────────────── tidyverse_conflicts() ──</span>
-#&gt; <span class='message'></span><span style='color: #BB0000;'>✖</span><span> </span><span style='color: #0000BB;'>dplyr</span><span>::</span><span style='color: #00BB00;'>filter()</span><span> masks </span><span style='color: #0000BB;'>stats</span><span>::filter()</span>
-#&gt; <span class='message'></span><span style='color: #BB0000;'>✖</span><span> </span><span style='color: #0000BB;'>dplyr</span><span>::</span><span style='color: #00BB00;'>lag()</span><span>    masks </span><span style='color: #0000BB;'>stats</span><span>::lag()</span></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/library'>library</a></span>(<span class='no'>cowplot</span>)</div><div class='output co'>#&gt; <span class='message'></span>
-#&gt; <span class='message'>********************************************************</span></div><div class='output co'>#&gt; <span class='message'>Note: As of version 1.0.0, cowplot does not change the</span></div><div class='output co'>#&gt; <span class='message'>  default ggplot2 theme anymore. To recover the previous</span></div><div class='output co'>#&gt; <span class='message'>  behavior, execute:</span>
-#&gt; <span class='message'>  theme_set(theme_cowplot())</span></div><div class='output co'>#&gt; <span class='message'>********************************************************</span></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/library'>library</a></span>(<span class='no'>ggforce</span>)
+    <pre class="examples"><div class='input'><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span>
+</div><div class='output co'>#&gt; <span class='message'>── <span style='font-weight: bold;'>Attaching packages</span><span> ─────────────────────────────────────── tidyverse 1.3.0 ──</span></div><div class='output co'>#&gt; <span class='message'></span><span style='color: #00BB00;'>✓</span><span> </span><span style='color: #0000BB;'>ggplot2</span><span> 3.3.2     </span><span style='color: #00BB00;'>✓</span><span> </span><span style='color: #0000BB;'>purrr  </span><span> 0.3.4</span>
+#&gt; <span class='message'></span><span style='color: #00BB00;'>✓</span><span> </span><span style='color: #0000BB;'>tibble </span><span> 3.0.4     </span><span style='color: #00BB00;'>✓</span><span> </span><span style='color: #0000BB;'>dplyr  </span><span> 1.0.2</span>
+#&gt; <span class='message'></span><span style='color: #00BB00;'>✓</span><span> </span><span style='color: #0000BB;'>tidyr  </span><span> 1.1.2     </span><span style='color: #00BB00;'>✓</span><span> </span><span style='color: #0000BB;'>stringr</span><span> 1.4.0</span>
+#&gt; <span class='message'></span><span style='color: #00BB00;'>✓</span><span> </span><span style='color: #0000BB;'>readr  </span><span> 1.3.1     </span><span style='color: #00BB00;'>✓</span><span> </span><span style='color: #0000BB;'>forcats</span><span> 0.5.0</span></div><div class='output co'>#&gt; <span class='message'>── </span><span style='font-weight: bold;'>Conflicts</span><span> ────────────────────────────────────────── tidyverse_conflicts() ──</span>
+#&gt; <span class='message'></span><span style='color: #BB0000;'>x</span><span> </span><span style='color: #0000BB;'>dplyr</span><span>::</span><span style='color: #00BB00;'>filter()</span><span> masks </span><span style='color: #0000BB;'>stats</span><span>::filter()</span>
+#&gt; <span class='message'></span><span style='color: #BB0000;'>x</span><span> </span><span style='color: #0000BB;'>dplyr</span><span>::</span><span style='color: #00BB00;'>lag()</span><span>    masks </span><span style='color: #0000BB;'>stats</span><span>::lag()</span></div><div class='input'><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://wilkelab.org/cowplot/'>cowplot</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://ggforce.data-imaginist.com'>ggforce</a></span><span class='op'>)</span>
 
 <span class='co'># calculate the start and end angles for each pie</span>
-<span class='no'>bund_pie</span> <span class='kw'>&lt;-</span> <span class='no'>bundestag</span> <span class='kw'>%&gt;%</span>
-  <span class='fu'>arrange</span>(<span class='no'>seats</span>) <span class='kw'>%&gt;%</span>
-  <span class='fu'>mutate</span>(
-    <span class='kw'>seat_total</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/sum'>sum</a></span>(<span class='no'>seats</span>),
-    <span class='kw'>end_angle</span> <span class='kw'>=</span> <span class='fl'>2</span>*<span class='no'>pi</span>*<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/cumsum'>cumsum</a></span>(<span class='no'>seats</span>)/<span class='no'>seat_total</span>,   <span class='co'># ending angle for each pie slice</span>
-    <span class='kw'>start_angle</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/stats/topics/lag'>lag</a></span>(<span class='no'>end_angle</span>, <span class='kw'>default</span> <span class='kw'>=</span> <span class='fl'>0</span>),   <span class='co'># starting angle for each pie slice</span>
-    <span class='kw'>mid_angle</span> <span class='kw'>=</span> <span class='fl'>0.5</span>*(<span class='no'>start_angle</span> + <span class='no'>end_angle</span>),   <span class='co'># middle of each pie slice, for the text label</span>
-    <span class='kw'>hjust</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/ifelse'>ifelse</a></span>(<span class='no'>mid_angle</span><span class='kw'>&gt;</span><span class='no'>pi</span>, <span class='fl'>1</span>, <span class='fl'>0</span>),
-    <span class='kw'>vjust</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/ifelse'>ifelse</a></span>(<span class='no'>mid_angle</span><span class='kw'>&lt;</span><span class='no'>pi</span>/<span class='fl'>2</span> <span class='kw'>|</span> <span class='no'>mid_angle</span><span class='kw'>&gt;</span><span class='fl'>3</span>*<span class='no'>pi</span>/<span class='fl'>2</span>, <span class='fl'>0</span>, <span class='fl'>1</span>)
-  )
+<span class='va'>bund_pie</span> <span class='op'>&lt;-</span> <span class='va'>bundestag</span> <span class='op'>%&gt;%</span>
+  <span class='fu'>arrange</span><span class='op'>(</span><span class='va'>seats</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='fu'>mutate</span><span class='op'>(</span>
+    seat_total <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/sum.html'>sum</a></span><span class='op'>(</span><span class='va'>seats</span><span class='op'>)</span>,
+    end_angle <span class='op'>=</span> <span class='fl'>2</span><span class='op'>*</span><span class='va'>pi</span><span class='op'>*</span><span class='fu'><a href='https://rdrr.io/r/base/cumsum.html'>cumsum</a></span><span class='op'>(</span><span class='va'>seats</span><span class='op'>)</span><span class='op'>/</span><span class='va'>seat_total</span>,   <span class='co'># ending angle for each pie slice</span>
+    start_angle <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/stats/lag.html'>lag</a></span><span class='op'>(</span><span class='va'>end_angle</span>, default <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>,   <span class='co'># starting angle for each pie slice</span>
+    mid_angle <span class='op'>=</span> <span class='fl'>0.5</span><span class='op'>*</span><span class='op'>(</span><span class='va'>start_angle</span> <span class='op'>+</span> <span class='va'>end_angle</span><span class='op'>)</span>,   <span class='co'># middle of each pie slice, for the text label</span>
+    hjust <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>mid_angle</span><span class='op'>&gt;</span><span class='va'>pi</span>, <span class='fl'>1</span>, <span class='fl'>0</span><span class='op'>)</span>,
+    vjust <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>mid_angle</span><span class='op'>&lt;</span><span class='va'>pi</span><span class='op'>/</span><span class='fl'>2</span> <span class='op'>|</span> <span class='va'>mid_angle</span><span class='op'>&gt;</span><span class='fl'>3</span><span class='op'>*</span><span class='va'>pi</span><span class='op'>/</span><span class='fl'>2</span>, <span class='fl'>0</span>, <span class='fl'>1</span><span class='op'>)</span>
+  <span class='op'>)</span>
 
-<span class='no'>rpie</span> <span class='kw'>&lt;-</span> <span class='fl'>1</span>
-<span class='no'>rlabel</span> <span class='kw'>&lt;-</span> <span class='fl'>1.05</span> * <span class='no'>rpie</span>
+<span class='va'>rpie</span> <span class='op'>&lt;-</span> <span class='fl'>1</span>
+<span class='va'>rlabel</span> <span class='op'>&lt;-</span> <span class='fl'>1.05</span> <span class='op'>*</span> <span class='va'>rpie</span>
 
-<span class='fu'>ggplot</span>(<span class='no'>bund_pie</span>) +
-  <span class='fu'><a href='https://ggforce.data-imaginist.com/reference/geom_arc_bar.html'>geom_arc_bar</a></span>(
-    <span class='fu'>aes</span>(
-      <span class='kw'>x0</span> <span class='kw'>=</span> <span class='fl'>0</span>, <span class='kw'>y0</span> <span class='kw'>=</span> <span class='fl'>0</span>, <span class='kw'>r0</span> <span class='kw'>=</span> <span class='fl'>0</span>, <span class='kw'>r</span> <span class='kw'>=</span> <span class='no'>rpie</span>,
-      <span class='kw'>start</span> <span class='kw'>=</span> <span class='no'>start_angle</span>, <span class='kw'>end</span> <span class='kw'>=</span> <span class='no'>end_angle</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='no'>colors</span>
-     )
-  ) +
-  <span class='fu'>geom_text</span>(
-    <span class='fu'>aes</span>(
-      <span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>rlabel</span>*<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/Trig'>sin</a></span>(<span class='no'>mid_angle</span>),
-      <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>rlabel</span>*<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/Trig'>cos</a></span>(<span class='no'>mid_angle</span>),
-      <span class='kw'>label</span> <span class='kw'>=</span> <span class='no'>party</span>,
-      <span class='kw'>hjust</span> <span class='kw'>=</span> <span class='no'>hjust</span>, <span class='kw'>vjust</span> <span class='kw'>=</span> <span class='no'>vjust</span>
-    )
-  ) +
-  <span class='fu'>coord_fixed</span>() +
-  <span class='fu'>scale_x_continuous</span>(<span class='kw'>limits</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(-<span class='fl'>1.6</span>, <span class='fl'>1.3</span>), <span class='kw'>name</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>breaks</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>labels</span> <span class='kw'>=</span> <span class='kw'>NULL</span>) +
-  <span class='fu'>scale_y_continuous</span>(<span class='kw'>limits</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(-<span class='fl'>1.1</span>, <span class='fl'>1.3</span>), <span class='kw'>name</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>breaks</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>labels</span> <span class='kw'>=</span> <span class='kw'>NULL</span>) +
-  <span class='fu'>scale_fill_identity</span>() +
-  <span class='fu'><a href='https://www.rdocumentation.org/packages/cowplot/topics/theme_map'>theme_map</a></span>()</div><div class='img'><img src='bundestag-1.png' alt='' width='700' height='433' /></div></span></pre>
+<span class='fu'>ggplot</span><span class='op'>(</span><span class='va'>bund_pie</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggforce.data-imaginist.com/reference/geom_arc_bar.html'>geom_arc_bar</a></span><span class='op'>(</span>
+    <span class='fu'>aes</span><span class='op'>(</span>
+      x0 <span class='op'>=</span> <span class='fl'>0</span>, y0 <span class='op'>=</span> <span class='fl'>0</span>, r0 <span class='op'>=</span> <span class='fl'>0</span>, r <span class='op'>=</span> <span class='va'>rpie</span>,
+      start <span class='op'>=</span> <span class='va'>start_angle</span>, end <span class='op'>=</span> <span class='va'>end_angle</span>, fill <span class='op'>=</span> <span class='va'>colors</span>
+     <span class='op'>)</span>
+  <span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>geom_text</span><span class='op'>(</span>
+    <span class='fu'>aes</span><span class='op'>(</span>
+      x <span class='op'>=</span> <span class='va'>rlabel</span><span class='op'>*</span><span class='fu'><a href='https://rdrr.io/r/base/Trig.html'>sin</a></span><span class='op'>(</span><span class='va'>mid_angle</span><span class='op'>)</span>,
+      y <span class='op'>=</span> <span class='va'>rlabel</span><span class='op'>*</span><span class='fu'><a href='https://rdrr.io/r/base/Trig.html'>cos</a></span><span class='op'>(</span><span class='va'>mid_angle</span><span class='op'>)</span>,
+      label <span class='op'>=</span> <span class='va'>party</span>,
+      hjust <span class='op'>=</span> <span class='va'>hjust</span>, vjust <span class='op'>=</span> <span class='va'>vjust</span>
+    <span class='op'>)</span>
+  <span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>coord_fixed</span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>scale_x_continuous</span><span class='op'>(</span>limits <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>1.6</span>, <span class='fl'>1.3</span><span class='op'>)</span>, name <span class='op'>=</span> <span class='cn'>NULL</span>, breaks <span class='op'>=</span> <span class='cn'>NULL</span>, labels <span class='op'>=</span> <span class='cn'>NULL</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>scale_y_continuous</span><span class='op'>(</span>limits <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>1.1</span>, <span class='fl'>1.3</span><span class='op'>)</span>, name <span class='op'>=</span> <span class='cn'>NULL</span>, breaks <span class='op'>=</span> <span class='cn'>NULL</span>, labels <span class='op'>=</span> <span class='cn'>NULL</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>scale_fill_identity</span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://wilkelab.org/cowplot/reference/theme_map.html'>theme_map</a></span><span class='op'>(</span><span class='op'>)</span>
+</div><div class='img'><img src='bundestag-1.png' alt='' width='700' height='433' /></div></span></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      <li><a href="#format">Format</a></li>
-      <li><a href="#references">References</a></li>
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
+
 
       <footer>
       <div class="copyright">
@@ -214,13 +219,16 @@ column holds variations of these colors that are less saturated.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
+
       </footer>
    </div>
 
   
 
+
   </body>
 </html>
+
 

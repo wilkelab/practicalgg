@@ -107,6 +107,7 @@ test_that("corruption", {
       point.padding = 0.1,
       box.padding = .6,
       min.segment.length = 0,
+      max.overlaps = 1000,
       seed = 7654
     ) +
     scale_color_manual(
