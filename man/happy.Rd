@@ -4,13 +4,15 @@
 \name{happy}
 \alias{happy}
 \title{Data related to happiness from the general social survey}
-\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 51020 rows and 10 columns.}
+\format{
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 51020 rows and 10 columns.
+}
 \usage{
 happy
 }
 \description{
 This dataset provides a small sample of variables related to happiness from the general social survey (GSS).
-It is a reexport of the \code{\link[productplots:happy]{productplots::happy}} dataset, converted into a tibble.
+It is a reexport of the \code{productplots::happy} dataset, converted into a tibble.
 }
 \examples{
 library(tidyverse)

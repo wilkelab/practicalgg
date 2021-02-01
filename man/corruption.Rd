@@ -4,7 +4,9 @@
 \name{corruption}
 \alias{corruption}
 \title{Corruption Perceptions Index (CPI) and Human Development Index (HDI)}
-\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 704 rows and 5 columns.}
+\format{
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 704 rows and 6 columns.
+}
 \usage{
 corruption
 }

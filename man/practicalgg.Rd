@@ -3,7 +3,6 @@
 \docType{package}
 \name{practicalgg}
 \alias{practicalgg}
-\alias{practicalgg-package}
 \title{Practical ggplot2, a package demonstrating practical uses of the ggplot2 package.}
 \description{
 Practical ggplot2, a package demonstrating practical uses of the ggplot2 package.

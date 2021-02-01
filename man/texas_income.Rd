@@ -4,7 +4,9 @@
 \name{texas_income}
 \alias{texas_income}
 \title{Median income in Texas counties}
-\format{An object of class \code{sf} (inherits from \code{data.frame}) with 254 rows and 6 columns.}
+\format{
+An object of class \code{sf} (inherits from \code{data.frame}) with 254 rows and 6 columns.
+}
 \usage{
 texas_income
 }
