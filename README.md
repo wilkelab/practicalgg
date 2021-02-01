@@ -47,6 +47,12 @@ install.packages("remotes")
 remotes::install_github("wilkelab/practicalgg")
 ```
 
+The `install_github()` line will likely prompt you to update packages
+you have already installed. Unless you know what you’re doing, it is
+recommended to choose the option “CRAN packages only”. If you’re given
+the option to install source packages, decline this option unless you
+routinely install R packages from source.
+
 You may have to repeat the `install_github()` command if you want to
 work through an example I have added after you last installed the
 practicalgg package.
